@@ -145,29 +145,18 @@ ol {
   border: 1px solid #fff;
   margin: 2px;
   align-self: center;
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.search-form__checkbox {
-  
-}
-
-.search-form__checkbox + .search-form__pseudo-checkbox::before {
-  content: '';
-  position: absolute;
-  width: 19px;
-  height: 19px;
-}
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
   content: '';
-  position: absolute;
-  width: 15px;
-  height: 15px;
+  width: 16px;
+  height: 16px;
   border: none;
   background-color: #fff;
-  top: 1px;
-  left: 1px;
 }
 
 input[type='checkbox']:checked + span {
