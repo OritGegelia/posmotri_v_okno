@@ -47,15 +47,11 @@ ol {
   gap: 30px;
 }
 
-/* Result */
-
 .result {
   display: flex;
   flex-direction: column;
   gap: 14px;
 }
-
-/* Видео левой секции */
 
 .result__video-container {
   width: 711px;
@@ -70,8 +66,6 @@ ol {
   object-fit: cover;
   object-position: center;
 }
-
-/* Формы левой секции */
 
 .search-form {
   display: flex;
@@ -219,8 +213,6 @@ input[type="checkbox"]:checked + span {
   margin-bottom: 1px;
 }
 
-/* Правая секция */
-
 .content__details {
   display: flex;
   flex-direction: column;
@@ -233,7 +225,7 @@ input[type="checkbox"]:checked + span {
   font-size: 75px;
   font-style: normal;
   font-weight: 700;
-  line-height: 94%; /* 70.5px */
+  line-height: 94%;
   text-transform: uppercase;
 }
 
@@ -325,8 +317,6 @@ input[type="checkbox"]:checked + span {
   object-fit: cover;
   object-position: center;
 }
-
-/* Та удобная штука для сокрытия дефолтного вида форм */
 
 .visually-hidden {
   clip: rect(0 0 0 0);
