@@ -41,7 +41,6 @@ ol {
 }
 
 .content {
-  padding: 133px 30px;
   display: flex;
   justify-content: center;
   align-items: end;
@@ -53,21 +52,23 @@ ol {
 .result {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 14px;
 }
 
 /* Видео левой секции */
 
 .result__video-container {
-  min-width: 711px;
-  min-height: 386px;
+  width: 711px;
+  height: 386px;
   position: relative;
+  
 }
 
 .result__video {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
+  object-position: center;
 }
 
 /* Формы левой секции */
@@ -91,7 +92,7 @@ ol {
   color: #fff;
   font-family: inherit;
   font-size: inherit;
-  cursor: pointer;
+  cursor: text;
   appearance: none;
   border-top: 1px solid #fff;
   border-right: none;
@@ -100,10 +101,6 @@ ol {
   box-shadow: none;
   min-width: 225px;
   min-height: 27px;
-}
-
-.search-form__textfield::placeholder {
-  color: rgba(255, 255, 255, 0.7);
 }
 
 .search-form__textfield:active {
@@ -116,7 +113,7 @@ ol {
 
 .search-form__fieldset-title {
   color: #fff;
-  font-family: Fira Sans Condensed;
+  font-family: Fira Sans Condensed, Arial, Helvetica, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -132,6 +129,7 @@ ol {
   display: flex;
   gap: 3px;
   width: fit-content;
+  cursor: pointer;
 }
 
 .search-form__label:has(:focus-visible) {
@@ -164,7 +162,7 @@ input[type="checkbox"]:checked + span {
 
 .search-form__label-text {
   color: #fff;
-  font-family: Fira Sans Condensed;
+  font-family: Fira Sans Condensed, Arial, Helvetica, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -179,7 +177,7 @@ input[type="checkbox"]:checked + span {
 .button {
   color: #fff;
   text-align: center;
-  font-family: Fira Sans Condensed;
+  font-family: Fira Sans Condensed, Arial, Helvetica, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -188,7 +186,7 @@ input[type="checkbox"]:checked + span {
   justify-content: center;
   align-items: center;
   background-color: transparent;
-  border: 1px solid #fff;
+  border: 1px solid currentColor;
   cursor: pointer;
 }
 
@@ -218,6 +216,7 @@ input[type="checkbox"]:checked + span {
   display: block;
   width: 100%;
   min-height: 34px;
+  margin-bottom: 1px;
 }
 
 /* Правая секция */
@@ -225,14 +224,12 @@ input[type="checkbox"]:checked + span {
 .content__details {
   display: flex;
   flex-direction: column;
-  gap: 26px;
-  max-width: 399px;
-  max-height: 534px;
+  gap: 20px;
 }
 
 .content__accent {
   color: #545050;
-  font-family: Oswald;
+  font-family: Oswald, Arial, Helvetica, sans-serif;
   font-size: 75px;
   font-style: normal;
   font-weight: 700;
@@ -242,7 +239,7 @@ input[type="checkbox"]:checked + span {
 
 .title {
   color: #fff;
-  font-family: Oswald;
+  font-family: Oswald, Arial, Helvetica, sans-serif;
   font-size: 75px;
   font-style: normal;
   font-weight: 700;
@@ -251,10 +248,11 @@ input[type="checkbox"]:checked + span {
 }
 
 .content__list {
-  overflow: scroll;
+  overflow: auto;
   position: relative;
   display: grid;
-  margin-bottom: -17px;
+  height: 298px;
+  width: 399px;
 }
 
 .content__list::-webkit-scrollbar {
@@ -262,7 +260,7 @@ input[type="checkbox"]:checked + span {
 }
 
 .content__list-item:not(:last-of-type) {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .content__card-link {
@@ -303,7 +301,7 @@ input[type="checkbox"]:checked + span {
 
 .content__video-card-title {
   color: #fff;
-  font-family: Oswald;
+  font-family: Oswald, Arial, Helvetica, sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
@@ -313,7 +311,7 @@ input[type="checkbox"]:checked + span {
 
 .content__video-card-description {
   color: #fff;
-  font-family: Fira Sans Condensed;
+  font-family: Fira Sans Condensed, Arial, Helvetica, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -324,6 +322,8 @@ input[type="checkbox"]:checked + span {
   height: 103px;
   align-self: center;
   justify-self: end;
+  object-fit: cover;
+  object-position: center;
 }
 
 /* Та удобная штука для сокрытия дефолтного вида форм */
