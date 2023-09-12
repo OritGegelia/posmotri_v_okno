@@ -59,7 +59,6 @@ ol {
   width: 711px;
   height: 386px;
   position: relative;
-  
 }
 
 .result__video {
@@ -289,7 +288,6 @@ input[type="checkbox"]:checked + span {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   height: 107px;
-  padding: 0 3px;
 }
 
 .content__video-card:active {
@@ -318,6 +316,7 @@ input[type="checkbox"]:checked + span {
 
 .content__video-card-thumbnail {
   height: 103px;
+  width: 194px;
   align-self: center;
   justify-self: end;
   object-fit: cover;
